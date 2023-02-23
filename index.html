@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apple</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+       <table>
+        <tr>
+            <td>
+                <table class="header-bg header-space" >
+                    <tr>
+                        <td class="menu">
+                            <ul>
+                                <li>
+                                    <img src=" data:image/png;base64,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" alt="" width="20px">
+                                </li>
+                                <li>
+                                    Store
+                                </li>
+                                <li>
+                                    Mac
+                                </li>
+                                <li>
+                                    ipad
+                                </li>
+                                <li>
+                                    iphone
+                                </li>
+                                <li>
+                                    Watch
+                                </li>
+                                <li>
+                                    Airpods
+                                </li>
+                                <li>
+                                    Tv & Home
+                                </li>
+                                <li>
+                                    only on apple
+                                </li>
+                                <li>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZm3v3wgtbj1dsIc6PLyU7NE6h38QFW_KpaQ&usqp=CAU" alt="" width="20px">
+                                </li>
+                                <li>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6AUjQB3n16fwcn0HAK7yl5QXt-FCBVLtTpg&usqp=CAU" alt="" width="20px">
+                                </li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+             <td>
+                        <table >
+                            <tr>
+                                <td style="text-align: center; padding-top: 10px; padding-bottom: 10px; background-color: rgb(216, 12, 12);">
+                                    Get up to ₹10000 instant savings on selected products with HDFC Bank credit cards.‡ Plus No Cost EMI from most leading banks.‡‡<a href="https://www.apple.com/in/store"> Shop now</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="content-2">
+                                        <tr>
+                                            <td style="color: blanchedalmond;" class="header-fond" > 
+                                               <p>Introducing the </br> new MacBook Pro and Mac mini.</p><br class="pl-20"/>
+                                              
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  style="text-align: center;" >
+                                          <a class="btn-watch">Watch the announcement </span></a>  
+                                            </td>
+                                        </tr>
+                                        <tr >
+                                            <td class="content-headeing">
+                                               <b>Mac book pro</b>
+
+                                            </td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td  class="content-headeing-2">
+                                                Supercharged by M2 pro and M2 pro max
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="content-headeing-2 color-grey f-20 pt-10">
+                                              Avaibily Starting from 24 jan
+                                            </td>
+                                        </tr>
+                                       
+                                    </table>
+                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="content-2">
+                                        <tr>
+                                            <td  class="text-center pt-10">
+                                                <a class="button-learn" href="www.goole.com">lean more </a>
+                                                <a  class="button-learn pl-20" href="www.goole.com">Order now  </a>
+                                            </td>
+                                           
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td >
+                                                <img src="https://nofilmschool.com/sites/default/files/styles/facebook/public/apple_macbook_pro.jpg?itok=s_lX3Bdj" alt="" width="100%">
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="  width: 100%; border-spacing: 30px ; background-color: black;">
+                                        <tr>
+                                            <td class="header-fond-2" >
+                                               <b>Mac mini</b> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  style="text-align: center;">
+                                                <span style="font-size: 25px; color: bisque;">Supercharged by M2 and m2 pro</span>    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table class="content-2">
+                                                    <tr>
+                                                        <td  class="text-center pt-10">
+                                                            <a class="button-learn" href="www.goole.com">lean more </a>
+                                                            <a  class="button-learn pl-20" href="www.goole.com">Order now  </a>
+                                                        </td>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="https://img.youtube.com/vi/3oq__ScnynA/hqdefault.jpg" alt="" width="100%">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="  width: 100%; border-spacing:  30px; background-color: black;">
+                                        <tr>
+                                            <td class="header-fond-2" >
+                                               <b>HomePod</b> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  style="text-align: center;">
+                                                <span style="font-size: 25px; color: bisque;">profound Sound</span>    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table class="content-2">
+                                                    <tr>
+                                                        <td  class="text-center pt-10">
+                                                            <a class="button-learn" href="www.google.com">lean more </a>
+                                                            <a  class="button-learn pl-20" href="www.google.com">Order now  </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr> 
+                                        <tr>
+                                            <td>
+                                                <img src="https://www.apple.com/v/homepod-2nd-generation/a/images/meta/homepod__dlwt789yhxme_og.png" alt="" width="100%">
+                                            </td>
+                                        </tr>
+                                    <table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  >
+                                    <table style="border-spacing: 15px;">
+                                        <tr>
+                                            <td class="text-center header-fond-2 content-2 "  style="width: 50%;">
+                                               <p class="m-0">creative and <br />community. <br/> Woven together</p>
+                                               <p class="samll-font"> Explore the new Black Unity watch <br class=""/>straep and matching face</p>
+                                              
+                                               <span  class="text-center pt-10 m-0">
+                                                <a class="button-learn" href="www.google.com">lean more </a>
+                                                <a  class="button-learn pl-20" href="www.google.com">Order now  </a></span><br/>
+                                                <img src="https://www.lifewire.com/thmb/iDHRk0U5_LW16xo1dderT_3HoOs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/apple-watch-series-8-fe15b07f58554ea5a5846dcef32d7839.png" alt="" width="50%">
+
+                                            </td>
+                                            <td class="text-center header-fond-2 content-2  lh-45 ">
+                                                <p > <img src="data:image/png;base64,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" alt="" width="20px"> <b class="m-0" style="font-size: 25px;">Watch</b> </span><br/></p>
+                                                 <p class="color " style="font-size: small; margin: 0%;">serise 8</p><br class="lh-45"/>
+                                                 <a class="button-learn " href="www.google.com">lean more </a>
+                                                 <a  class="button-learn pl-20" href="www.google.com">Order now  </a><br class="lh-45"/>
+                                                
+                                                <img src="data:image/jpeg;base64,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" alt="" width="100%">
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="border-spacing: 15px;border-spacing-top:0px">
+                                        <tr>
+                                            <td class="text-center header-fond-2 content-2 "  style="width: 50%;">
+                                               <p class="m-0">iPhone 14 pro </p>
+                                               <a class="btn-watch color-grey f-b">with superfast 5G*  </span></a>
+                                               <p class="samll-font"> Explore the new Black Unity  <br class=""/>straep and matching face</p>
+                                              
+                                               <span  class="text-center pt-10 m-0">
+                                                <a class="button-learn" href="www.google.com">lean more </a>
+                                                <a  class="button-learn pl-20" href="www.google.com">Order now  </a></span><br/>
+                                                <img src="data:image/jpeg;base64,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" alt="" width="50%">
+
+                                            </td>
+                                            <td class="text-center wt-bg pad-80px">
+                                                <p class="pad-10px">iphone 14 </p>
+                                                <p class="c-black  " style="font-size: 30px;">Big and Bigger </p>
+                                                <p style="padding: 0px;"> <a class="btn-watch color-grey f-b">with superfast 5G* </a></p>
+                                                
+                                                 <p><a class="button-learn " href="www.google.com">lean more </a>
+                                                 <a  class="button-learn pl-20" href="www.google.com">Order now  </a></p>
+                                                
+                                                <img src="https://www.apple.com/newsroom/images/product/iphone/geo/Apple-iPhone-14-iPhone-14-Plus-hero-220907-geo_Full-Bleed-Image.jpg.large.jpg" alt="" width="100%">
+
+                                            </td>
+                                        </tr>
+                                      
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="border-spacing: 15px;">
+                                        <tr>
+                                            <td class="text-center header-fond-2 content-2 "  style="width: 50%;">
+                                               <p class="m-0">ipad  pro </p>
+                                               
+                                               <p class="samll-font"> Supercharged <img src="./image/download.jpeg" width="30px" alt="">  <br class=""/>straep and matching face</p>
+                                              
+                                               <span  class="text-center pt-10 m-0">
+                                                <a class="button-learn" href="www.google.com">lean more </a>
+                                                <a  class="button-learn pl-20" href="www.google.com">Order now  </a></span><br/>
+                                                <img src="https://www.apple.com/in/ipad-pro/images/overview/hero/hero_combo__fcqcc3hbzjyy_large.jpg" alt="" width="50%">
+                                            </td>
+                                             <td class="text-center wt-bg pad-80px">
+                                                <p class="pad-10px">ipad </p>
+                                                <p class="c-black  " style="font-size: 30px;">Lovable. Drawable. Magical. </p>
+                                    
+                                    
+                                     <p><a class="button-learn " href="www.google.com">lean more </a>
+                                     <a  class="button-learn pl-20" href="www.google.com">Order now  </a></p>
+                                    
+                                      <img src="https://www.apple.com/newsroom/images/product/ipad/standard/Apple-iPad-10th-gen-hero-221018_Full-Bleed-Image.jpg.large.jpg" alt="" width="100%">
+                                    </table>   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="https://whistlerfilmfestival.com/wp-content/uploads/2019/08/Website-Banners-2.png" alt="" width="100%">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td style="text-align: center;  margin: 30px;" class="color-grey cen ">
+                                               <p style="text-align: center;margin-left: 15%; margin-right: 15%; "> *Data plan is required. 5G is available in selected markets and through selected carriers. Speeds vary based on site conditions and carrier. For details on 5G support, contact your carrier and see apple.com/in/iphone/cellular.
+‡Instant savings, otherwise referred to as Instant Cashback on the Apple Store Online, is available with the purchase of an eligible product for qualifying HDFC Bank Credit Cards & HDFC Bank Credit Card EMI only. Minimum transaction value of ₹10001 applies. Click here to see instant savings amounts and eligible devices. Instant savings is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card-issuing bank. Total transaction value is calculated after any trade-in credit or eligible discount applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant savings being recalculated, and any refund may be adjusted to account for instant savings clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Terms and conditions apply. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant savings.
+Get extra trade-in credit, otherwise referred to as additional exchange savings or exchange bonus, when you trade in an eligible iPhone and purchase a new Apple device until 5 March 2023. Extra trade-in credit of ₹5000 is available while trading in iPhone 12, iPhone 11, iPhone XR or iPhone X and ₹4500 on iPhone 7.
+‡‡No Cost EMI is available with the purchase of an eligible product made using qualifying credit or debit cards on 3- or 6-month tenures from most leading banks. Minimum order spend applies as per your credit or debit card’s issuing bank threshold. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Credit or debit card eligibility is subject to terms and conditions between you and your credit or debit card–issuing bank. Offer may be revised or withdrawn at any time without any prior notice. Terms & conditions apply.
+Representative example: Based off a 6-month tenure. iPhone 14 at ₹79900 total cost includes 14% p.a. and No Cost EMI savings of ₹3164, paid over 6 months as six monthly payments of ₹13317.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <hr style="color: black;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <table class="footer"  >
+                    <tr>
+                        <td class="f-c" class="v-top" >
+                            <ul >
+                                <li>
+                                   <b>Shop and Learn</b> 
+                                </li>
+                                <li>
+                                    Mac
+                                </li>
+                                <li>
+                                    iPad
+                                </li>                                       
+                                   iPhone
+                                <li>
+                                    Watch
+                                </li>
+                                <li>
+                                    AirPods
+                                </li>
+
+                                <li>
+                                    TV & Home
+                                </li>
+                                <li>
+                                    AirTag
+                                </li>
+                                <li>
+                                    Accessories
+                                </li>
+                                <li>
+                                    Gift Cards
+                                </li>
+                                <li>
+                                    Store
+  
+                                </li>
+                            </ul>
+                        </td>
+                        <td style="vertical-align: top; "class="v-top">
+                            <ul class="menu f-c"  >
+                                <li>
+                                   <b> Services</b> 
+                                </li>
+                                <li>
+                                    Apple Music
+                                </li>
+                                <li>
+                                     Account
+                                    
+                                   
+                                   
+                                </li>                                       
+                                iCloud
+                                <li>
+                                    Apple One
+                                </li>
+                                <li>
+                                    Apple Books
+                                </li>
+
+                                <li>
+                                    Apple Podcasts
+                                </li>
+                                <li>
+                                    App Store
+                                </li>
+                                <li>
+                                    Accessories
+                                </li>
+                                <li>
+                                    Manage Your Apple ID
+                                </li>
+                                <li>
+                                    Apple Store Account
+  
+                                </li>
+                                <li>
+                                    iCloud.com
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="v-top" class="v-top">
+                            <ul class="menu f-c ">
+                                <li>
+                                    <b>  Apple Store</b>
+                                </li>
+                                <li>
+                                    Ways to Buy
+                                </li>
+                                <li>
+                                    Apple Trade In
+                                </li>
+                                <li>
+                                    Recycling Programme
+                                </li>
+                                <li>
+                                    Order Status
+                                </li>
+                                <li>
+                                    Shopping Help
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="v-top">
+                            <ul class="menu f-c">                              
+                              
+                                <li>
+                                   <b>Apple and Business</b>  
+                                </li>
+                                <li>
+                                    For Education
+                                </li>
+                                <li>
+                                    Apple and Education
+                                </li>
+                                <li>
+                                    Shop for Education
+                                </li>
+                                <li>
+                                    Shop for University
+                                </li>
+                                <li>
+                                    For Healthcare
+                                </li>
+                                <li>
+                                    Apple in Healthcare
+                                </li>
+                                <li>
+                                    Health on Apple Watch
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="v-top">
+                            <ul class="menu f-c">    
+                                <li>
+                                   <b>About Apple</b>              
+                                </li>
+                                <li>
+                                    Newsroom
+                                </li>
+                                <li>
+                                    Apple Leadership
+                                </li>
+                                <li>
+                                    Career Opportunities
+                                </li>
+                                <li>
+                                    Investors
+                                </li>
+                                <li>
+                                    Ethics & Compliance
+                                </li>
+                                <li>
+                                    Contact Apple   
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+             <td>
+                        
+             </td>
+            
+       </table>
+       
+    </body>
+</html>
